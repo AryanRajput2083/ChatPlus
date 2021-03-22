@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:background="#aaaaaa"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:elevation="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="#c7c7c7"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="use anytime"
+                android:padding="8dp"
+                />
+            <Button
+                android:id="@+id/nots"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:text="Notes"
+                style="@style/myCustomContainedButton"/>
+            <Button
+                android:id="@+id/ttss"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Text to Speech"
+                style="@style/myCustomContainedButton"/>
+
+            <Button
+                style="@style/myCustomContainedButton"
+                android:id="@+id/calu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="calculator" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_margin="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/ll1"
+            android:background="#fada8a"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="login to use"
+                android:textSize="20sp"
+                android:padding="8dp"
+                />
+
+            <Button
+                android:id="@+id/dictt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                style="@style/myCustomContainedButton4"
+                android:text="dictionary" />
+
+            <Button
+                android:id="@+id/mtxx"
+                style="@style/myCustomContainedButton4"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="matrix solver" />
+
+            <Button
+                style="@style/myCustomContainedButton4"
+                android:id="@+id/httm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="web designer" />
+            <Button
+                style="@style/myCustomContainedButton4"
+                android:id="@+id/chatter"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:text="Chat" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/main2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="main2" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="file" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

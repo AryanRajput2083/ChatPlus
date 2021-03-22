@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bg5"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="top|center_horizontal"
+            android:text="access all features after login"
+            android:id="@+id/detail"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+        <ProgressBar
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/progress"
+            style="?android:progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/l11"
+            android:alpha="0.55"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#ffffff"
+            android:elevation="20dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="username"
+                android:textColor="#000000"
+                android:inputType="textEmailAddress"
+                android:textSize="22dp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="password"
+                android:textColor="#000000"
+
+                android:inputType="textPassword"
+                android:textSize="22dp" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0044ff"
+                android:text="Login"
+
+                android:textColor="#ffffff"
+                android:textSize="27dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="register"
+
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#0000ff"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:id="@+id/register"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="forget Password"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#0000ff"
+                    android:textStyle="bold"
+                    android:id="@+id/forgetP"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/myCustomContainedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:text="logout"
+                android:elevation="20dp"
+                android:background="#0caa0f"
+                android:textSize="20dp"
+                android:visibility="visible"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/logout"/>
+
+            <Button
+                style="@style/myCustomContainedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:text="del ac"
+                android:elevation="20dp"
+                android:background="#ff0000"
+                android:textSize="20dp"
+                android:visibility="gone"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/delete"/>
+
+
+            <Button
+                style="@style/myCustomContainedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="skip"
+                android:layout_weight="1"
+                android:background="#c00a83"
+                android:textSize="20dp"
+                android:elevation="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/skip"/>
+
+        </LinearLayout>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="always skip login"
+            android:id="@+id/checkbox"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="bottom|center_horizontal"
+            android:text="you can also proceed without login"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

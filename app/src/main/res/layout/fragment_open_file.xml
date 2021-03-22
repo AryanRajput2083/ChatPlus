@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OpenFileFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="write code here"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:text=""
+                android:gravity="top|left"
+                android:scrollbars="vertical|horizontal"
+                android:scrollHorizontally="true"
+                android:scrollbarStyle="insideInset"
+                android:background="#ffffff"
+                android:id="@+id/filedata"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="55dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

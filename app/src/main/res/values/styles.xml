@@ -1,0 +1,97 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--this item is to override the fontFamily of the material design buttons
+        <item name="textAppearanceButton">@style/TextAppearance.App.Button</item>
+
+        <this item is to override the cornerFamily and cornerSize of the material design buttons>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>-
+
+
+        <item name="materialButtonStyle">@style/myCustomContainedButton</item>
+
+        <!-this item is invoked in app theme to override the outlined material button-
+        <item name="materialButtonOutlinedStyle">@style/myCustomOutlinedButton</item>-->
+    </style>
+    <!--Base application theme ends here-->
+
+    <!--theming of contained button begins here-->
+    <!--parent name is to be give carefully-->
+
+    <style name="myCustomContainedButton" parent="Widget.MaterialComponents.Button">
+        <!--these all styles are implemented outside, because to get all the overridden attributes easily-->
+        <item name="shapeAppearance">@style/customContainedButtonTheme</item>
+        <item name="backgroundTint">#009688</item>
+        <item name="elevation">10dp</item>
+        <item name="android:textAppearance">@style/myCustomTextForMaterialButtons</item>
+    </style>
+    <style name="myCustomContainedButton3" parent="Widget.MaterialComponents.Button">
+        <!--these all styles are implemented outside, because to get all the overridden attributes easily-->
+        <item name="shapeAppearance">@style/customContainedButtonTheme</item>
+        <item name="backgroundTint">#2196f3</item>
+        <item name="elevation">10dp</item>
+        <item name="android:textAppearance">@style/myCustomTextForMaterialButtons</item>
+    </style>
+    <style name="myCustomContainedButton2" parent="Widget.MaterialComponents.Button">
+        <!--these all styles are implemented outside, because to get all the overridden attributes easily-->
+        <item name="shapeAppearance">@style/customContainedButtonTheme</item>
+        <item name="backgroundTint">#9fa6ff</item>
+        <item name="elevation">10dp</item>
+        <item name="android:textAppearance">@style/myCustomTextForMaterialButtons</item>
+    </style>
+    <style name="myCustomOutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <!--these all styles are implemented outside, because to get all the overridden attributes easily-->
+        <item name="shapeAppearance">@style/customOutlinedButtonTheme</item>
+        <item name="android:textAppearance">@style/myCustomTextForMaterialButtons</item>
+    </style>
+    <style name="myCustomContainedButton4" parent="Widget.MaterialComponents.Button">
+        <!--these all styles are implemented outside, because to get all the overridden attributes easily-->
+        <item name="shapeAppearance">@style/customOutlinedButtonTheme</item>
+        <item name="backgroundTint">#6aa123</item>
+        <item name="android:textAppearance">@style/myCustomTextForMaterialButtons</item>
+    </style>
+
+
+    <style name="myCustomTextForMaterialButtons">
+        <item name="fontFamily">sans-serif-condensed-medium</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="customContainedButtonTheme">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+
+    <style name="customOutlinedButtonTheme">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+
+
+
+
+
+
+    <!--<style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />-->
+
+</resources>

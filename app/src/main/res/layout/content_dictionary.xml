@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="bottom"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/mmaaiinn"
+            android:background="#feeefe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:elevation="5dp"
+            android:padding="6dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/wrdtype"
+                android:textSize="24sp"
+
+
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:textColor="#0000ff"
+                android:text=""/>
+            <ImageView
+                android:background="#feeefe"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/speak_dic"
+                android:elevation="10dp"
+                android:src="@drawable/speakk"/>
+
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mean_dic"
+                    android:text="WELCOME"
+                    android:textStyle="bold"
+                    android:elevation="5dp"
+                    android:background="#fefeee"
+                    android:textColor="#a500cc"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"
+                    android:padding="4dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
